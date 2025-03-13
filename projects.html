@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>创新工作室 - 项目案例</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .projects-section {
+            padding: 120px 10% 5rem;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .project-card {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-image {
+            width: 100%;
+            height: 200px;
+            background-color: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+        }
+
+        .project-info {
+            padding: 1.5rem;
+        }
+
+        .project-info h3 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-info .category {
+            color: #3498db;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-info .description {
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .project-link {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .project-link:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">创新工作室</div>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="team.html">团队介绍</a></li>
+                <li><a href="projects.html" class="active">项目案例</a></li>
+                <li><a href="services.html">服务内容</a></li>
+                <li><a href="contact.html">联系我们</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="projects-section">
+            <h2>项目案例</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">🌐</div>
+                    <div class="project-info">
+                        <h3>智能客服系统</h3>
+                        <p class="category">人工智能 / 自然语言处理</p>
+                        <p class="description">基于深度学习的智能客服系统，支持多轮对话，准确率达95%以上。已服务超过100家企业，显著提升客服效率。</p>
+                        <a href="#" class="project-link">了解更多</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">📱</div>
+                    <div class="project-info">
+                        <h3>移动端商城</h3>
+                        <p class="category">移动开发 / UI设计</p>
+                        <p class="description">完整的电商解决方案，包含商品展示、购物车、支付等功能。采用React Native开发，支持iOS和Android平台。</p>
+                        <a href="#" class="project-link">了解更多</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">📊</div>
+                    <div class="project-info">
+                        <h3>数据分析平台</h3>
+                        <p class="category">大数据 / 可视化</p>
+                        <p class="description">企业级数据分析平台，支持实时数据处理和可视化展示，帮助企业快速洞察业务数据，辅助决策。</p>
+                        <a href="#" class="project-link">了解更多</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>联系方式</h4>
+                <p>电话：123-456-7890</p>
+                <p>邮箱：contact@innovationstudio.com</p>
+                <p>地址：某某市某某区某某街道123号</p>
+            </div>
+            <div class="footer-section">
+                <h4>快速链接</h4>
+                <ul>
+                    <li><a href="team.html">团队介绍</a></li>
+                    <li><a href="projects.html">项目案例</a></li>
+                    <li><a href="services.html">服务内容</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 创新工作室 版权所有</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

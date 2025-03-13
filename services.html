@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>潇阳网页工作室 - 服务内容</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .services-section {
+            padding: 120px 10% 5rem;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .service-card {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .service-icon {
+            width: 100%;
+            height: 150px;
+            background-color: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: #3498db;
+        }
+        
+        .service-info {
+            padding: 1.5rem;
+        }
+        
+        .service-info h3 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+        
+        .service-info .description {
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        
+        .process-section {
+            padding: 5rem 10%;
+            background-color: #f9f9f9;
+        }
+        
+        .process-steps {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 3rem;
+            position: relative;
+        }
+        
+        .process-steps::before {
+            content: '';
+            position: absolute;
+            top: 40px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #e0e0e0;
+            z-index: 1;
+        }
+        
+        .process-step {
+            flex: 1;
+            min-width: 150px;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            padding: 0 10px;
+        }
+        
+        .step-number {
+            width: 80px;
+            height: 80px;
+            background-color: #3498db;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 auto 1rem;
+        }
+        
+        .step-title {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+        
+        .step-description {
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">潇阳网页工作室</div>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="team.html">团队介绍</a></li>
+                <!-- <li><a href="projects.html">项目案例</a></li> -->
+                <li><a href="services.html" class="active">服务内容</a></li>
+                <li><a href="contact.html">联系我们</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="services-section">
+            <h2>我们的服务</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">💻</div>
+                    <div class="service-info">
+                        <h3>网页开发</h3>
+                        <p class="description">提供从设计到部署的网页开发服务，包括响应式设计、内容管理系统和电子商务解决方案。</p>
+                    </div>
+                </div>
+                <!-- <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <div class="service-info">
+                        <h3>移动应用开发</h3>
+                        <p class="description">专业的iOS和Android应用开发，从创意构思到应用商店发布，提供全方位支持。</p>
+                    </div>
+                </div> -->
+                <!-- <div class="service-card">
+                    <div class="service-icon">🤖</div>
+                    <div class="service-info">
+                        <h3>人工智能解决方案</h3>
+                        <p class="description">利用机器学习和深度学习技术，为企业提供智能化解决方案，提升业务效率。</p>
+                    </div>
+                </div> -->
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <div class="service-info">
+                        <h3>海报设计</h3>
+                        <p class="description">专注用户体验的界面设计，创造直观、美观且易用的数字产品。</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📊</div>
+                    <div class="service-info">
+                        <h3>数据分析与可视化</h3>
+                        <p class="description">帮助企业理解和利用数据，通过数据分析和可视化展示，辅助决策制定。</p>
+                    </div>
+                </div>
+                <!-- <div class="service-card">
+                    <div class="service-icon">🔒</div>
+                    <div class="service-info">
+                        <h3>网络安全服务</h3>
+                        <p class="description">提供全面的网络安全评估、漏洞修复和安全加固服务，保护您的数字资产。</p>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+
+        <section class="process-section">
+            <h2>我们的工作流程</h2>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-title">需求分析</div>
+                    <p class="step-description">深入了解客户需求，明确项目目标和范围</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-title">方案设计</div>
+                    <p class="step-description">制定详细的技术方案和项目计划</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-title">开发实现</div>
+                    <p class="step-description">按计划进行开发，定期沟通进度</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-title">测试优化</div>
+                    <p class="step-description">全面测试，确保产品质量</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <div class="step-title">交付使用</div>
+                    <p class="step-description">部署上线，提供使用培训</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>联系方式</h4>
+                <p>电话：156-3202-9915</p>
+                <p>邮箱：2769691794@qq.com</p>
+                <p>地址：河海大学常州校区</p>
+            </div>
+            <div class="footer-section">
+                <h4>快速链接</h4>
+                <ul>
+                    <li><a href="team.html">团队介绍</a></li>
+                    <!-- <li><a href="projects.html">项目案例</a></li> -->
+                    <li><a href="services.html">服务内容</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 潇阳网页工作室 版权所有</p>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top" aria-label="返回顶部">↑</a>
+    <script src="script.js"></script>
+</body>
+</html>
